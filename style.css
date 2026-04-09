@@ -1,0 +1,285 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* BODY */
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#00c6ff);
+  background-size:400% 400%;
+  animation: gradient 10s ease infinite;
+  color:white;
+}
+
+/* ANIMATION */
+@keyframes gradient{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+.profile-img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #00f7ff;
+  margin-bottom:20px;
+  box-shadow:0 0 20px rgba(0,247,255,0.6);
+  .grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/*project*/
+
+.card h3{
+  margin-bottom:10px;
+  color:#00f7ff;
+}
+
+.card p{
+  font-size:14px;
+  line-height:1.6;
+}
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  position:sticky;
+  top:0;
+  box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+.skills-section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+.title{
+  font-size:32px;
+  margin-bottom:40px;
+}
+
+.skills-container{
+  max-width:600px;
+  margin:auto;
+}
+
+.skill-card{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  padding:15px;
+  margin:15px 0;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+  text-align:left;
+}
+
+.skill-card h3{
+  margin-bottom:8px;
+}
+
+.bar{
+  height:8px;
+  background:#333;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.fill{
+  height:100%;
+  background:linear-gradient(90deg,#00f7ff,#0077ff);
+  border-radius:10px;
+  transition:1s;
+}
+
+nav h2{
+  color:#00f7ff;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav li{
+  margin-left:25px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00f7ff;
+}
+/* EDUCATION GRAPH */
+
+.edu-section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+.edu-container{
+  max-width:600px;
+  margin:auto;
+}
+
+.edu-item{
+  margin:25px 0;
+  text-align:left;
+}
+
+.edu-bar{
+  background:#333;
+  height:25px;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.edu-fill{
+  height:100%;
+  background:linear-gradient(90deg,#00f7ff,#0077ff);
+  width:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:black;
+  font-weight:bold;
+  border-radius:20px;
+  transition:1.5s;
+}
+
+/* SECTION */
+section{
+  padding:60px 10%;
+  text-align:center;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.08);
+  padding:30px;
+  border-radius:15px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 20px rgba(0,0,0,0.3);
+  margin-top:20px;
+}
+
+/* BUTTON */
+button{
+  padding:12px 25px;
+  border:none;
+  border-radius:30px;
+  background:#00f7ff;
+  color:black;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 0 15px #00f7ff;
+}
+
+button:hover{
+  background:#00c6ff;
+  box-shadow:0 0 25px #00f7ff;
+  transform:scale(1.05);
+}
+
+/* CONTACT */
+
+/* CONTACT */
+.contact-section{
+  text-align:center;
+  padding:50px 20px;
+}
+
+.contact-section a{
+  color:#00f7ff;
+  text-decoration:none;
+}
+
+.contact-section a:hover{
+  text-decoration:underline;
+}
+#contact a{
+  color: white;
+  background: #0077b5;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#contact a:hover{
+  background: #005582;
+}
+
+
+/* CERTIFICATIONS */
+.cert-section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+.section-title{
+  font-size:32px;
+  margin-bottom:40px;
+}
+
+.cert-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.cert-card{
+  background:#111;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.cert-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  transition:0.3s;
+}
+
+.cert-info{
+  padding:15px;
+}
+
+.cert-info h3{
+  font-size:18px;
+}
+
+.cert-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,247,255,0.4);
+}
+
+.cert-card:hover img{
+  transform:scale(1.05);
+}
+
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:rgba(0,0,0,0.3);
+  margin-top:40px;
+}
